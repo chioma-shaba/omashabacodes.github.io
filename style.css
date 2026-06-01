@@ -3,16 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  body {
-    background:
-        radial-gradient(circle at 20% 20%, rgba(0,120,255,0.15), transparent 30%),
-        radial-gradient(circle at 80% 30%, rgba(0,80,200,0.12), transparent 25%),
-        linear-gradient(135deg, #020617 0%, #071226 40%, #0a1830 100%);
-    color: white;
-    font-family: 'Segoe UI', sans-serif;
-  }
+ body {
+  background: #020617;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.7;
 }
 
 .hero {
