@@ -5,14 +5,14 @@
 }
 
 body {
-  background: linear-gradient(
-      rgba(2, 6, 23, 0.95),
-      rgba(1, 12, 35, 0.98)
-    ),
-    radial-gradient(circle at top right, #2563eb33, transparent 30%);
-  color: white;
-  font-family: "Segoe UI", sans-serif;
-  line-height: 1.7;
+  body {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(0,120,255,0.15), transparent 30%),
+        radial-gradient(circle at 80% 30%, rgba(0,80,200,0.12), transparent 25%),
+        linear-gradient(135deg, #020617 0%, #071226 40%, #0a1830 100%);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
 }
 
 .hero {
@@ -140,4 +140,16 @@ footer {
 
 .big-tags span {
   margin-bottom: 10px;
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0,119,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,119,255,0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: -1;
+}
 }
