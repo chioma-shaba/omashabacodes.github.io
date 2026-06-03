@@ -164,3 +164,19 @@ body::after {
     font-size: 2rem;
     margin-bottom: 10px;
 }
+.card.project {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.card.project h3,
+.card.project p,
+.card.project span {
+  color: white;
+  text-decoration: none;
+}
+
+.card.project:hover h3 {
+  color: #60a5fa;
+}
